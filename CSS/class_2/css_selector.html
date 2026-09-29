@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+    <style>
+      /* universal selector */
+      /* * {
+        border: 1px solid black;
+        margin: 0;
+        padding: 0;
+      } */
+
+      /* Type Selector */
+      /* p,
+      section,
+      h2 {
+        color: blue;
+      } */
+
+      /* Class Seletor */
+      /* .para {
+        color: aqua;
+      }
+      .blog-section {
+        border: 1px solid;
+      } */
+
+      /* Id Selector */
+      /* #description {
+        color: cadetblue;
+      } */
+
+      /* child Selector */
+      /* div > h2 {
+        border: 1px solid;
+      }
+      div > h2 > span {
+        background-color: beige;
+      } */
+
+      /* Decendant Selector */
+      div p {
+        color: blue;
+      }
+      section p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>Lorem ipsum dolor sit.</p>
+    </section>
+    <div>
+      <p>Lorem ipsum dolor sit.</p>
+      <section>
+        <p>Lorem ipsum dolor sit.</p>
+        <div>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <h2>Lorem, ipsum.</h2>
+      <h2>Lorem, ipsum. <span>hello</span></h2>
+    </div>
+    <div class="container">
+      <h2>Lorem, ipsum.</h2>
+      <h2>Lorem, ipsum. <span>hello</span></h2>
+      <section>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos officiis
+        vitae consequuntur voluptatibus earum doloribus, iure a esse. Modi illum
+        cupiditate ex voluptatibus architecto consectetur perspiciatis minima
+        impedit ut ab.
+      </section>
+      <p class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+        ducimus vero? Accusamus commodi ullam nulla totam quisquam, reiciendis
+        consequuntur et quaerat assumenda quibusdam, similique dolorum dolor eos
+        ipsa. Hic, alias?
+      </p>
+
+      <div id="sub-container">
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          repellat repudiandae hic tenetur non. Maxime libero nobis optio qui!
+          Ducimus nihil deleniti aperiam debitis animi illo, natus harum facere
+          expedita?
+        </p>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          repellat repudiandae hic tenetur non. Maxime libero nobis optio qui!
+          Ducimus nihil deleniti aperiam debitis animi illo, natus harum facere
+          expedita?
+        </p>
+      </div>
+      <section class="blog-section">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos officiis
+        vitae consequuntur voluptatibus earum doloribus, iure a esse. Modi illum
+        cupiditate ex voluptatibus architecto consectetur perspiciatis minima
+        impedit ut ab.
+      </section>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+        repellat repudiandae hic tenetur non. Maxime libero nobis optio qui!
+        Ducimus nihil deleniti aperiam debitis animi illo, natus harum facere
+        expedita?
+      </p>
+      <section class="blog-section">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos officiis
+        vitae consequuntur voluptatibus earum doloribus, iure a esse. Modi illum
+        cupiditate ex voluptatibus architecto consectetur perspiciatis minima
+        impedit ut ab.
+      </section>
+    </div>
+  </body>
+</html>
