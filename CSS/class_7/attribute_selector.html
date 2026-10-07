@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Existance selector */
+      /* p[class] {
+        color: red;
+      } */
+
+      /* Eqaulity */
+      /* p[class="xyz"] {
+        color: blue;
+      } */
+      /* p[class="xyz7"] {
+        color: green;
+      }
+      input[type="text"] {
+        background-color: red;
+      } */
+
+      /* space  */
+      /* p[class~="xyz"] {
+        color: red;
+      } */
+
+      /* prefix */
+      /* p[class^="xyz34"] {
+        color: green;
+      } */
+
+      /* Suffix */
+      /* p[class$="d"] {
+        border: 1px solid black;
+      } */
+
+      /* substring */
+      p[class*="z"] {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="xyz">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="xyz3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="xyz7 xyz world xyz8">
+      Lorem ipsum dolor, sit amet consectetur adipisicing.
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="xyz3kasdf xyz ld">
+      Lorem ipsum dolor, sit amet consectetur adipisicing.
+    </p>
+    <p class="xyldz7">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <input type="text" />
+    <input type="email" />
+    <input type="text" />
+  </body>
+</html>
