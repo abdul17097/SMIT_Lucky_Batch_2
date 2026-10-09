@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .unorder_list {
+        /* list-style-type: disc; */
+        list-style-position: inside;
+        /* list-style-position: outside; */
+        /* list-style-image: url("../images/images.jpg"); */
+        list-style: none;
+        border: 1px solid;
+      }
+      .item::before {
+        content: "u";
+        display: inline-block;
+        padding-left: 10px;
+        width: 30px;
+        height: 20px;
+        /* box-sizing: border-box; */
+        border: 1px solid;
+      }
+      .item::after {
+        content: "➡";
+        display: inline-block;
+        padding-left: 10px;
+        width: 30px;
+        height: 20px;
+        /* box-sizing: border-box; */
+        border: 1px solid;
+      }
+      .order_list {
+        /* list-style-type: lower-alpha; */
+        /* list-style-type: upper-alpha; */
+        /* list-style-type: upper-roman; */
+        list-style-type: lower-roman;
+      }
+      .item1::before {
+        content: "";
+        background-image: url("../images/images.jpg");
+
+        /* content: url("../images/images.jpg"); */
+        border: 1px solid;
+        width: 30px;
+        height: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem, ipsum.</p>
+    <ul class="unorder_list">
+      <li class="item1">item</li>
+      <li class="item">item</li>
+      <li class="item">item</li>
+      <li class="item">item</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ol class="order_list">
+      <li class="item">item</li>
+      <li class="item">item</li>
+      <li class="item">item</li>
+      <li class="item">item</li>
+    </ol>
+  </body>
+</html>
