@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        /* box-sizing: border-box; */
+      }
+      fieldset {
+        /* width: 30%; */
+        min-width: 50%;
+        max-width: 30%;
+        margin: auto;
+        padding: 30px 20px;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        box-shadow: 2px 2px 10px burlywood;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="submit"],
+      select {
+        display: block;
+        width: 100%;
+        margin-bottom: 14px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        font-size: 18px;
+      }
+      select option:hover {
+        border: 1px solid;
+        padding: 10px;
+      }
+      input:focus {
+        outline: none;
+      }
+      label {
+        font-size: 20px;
+      }
+      input[type="submit"] {
+        margin-top: 40px;
+        background-color: green;
+        color: white;
+      }
+      input[type="submit"]:hover {
+        background-color: rgb(5, 165, 5);
+        color: white;
+        /* cursor: pointer; */
+        /* cursor: auto; */
+        /* cursor: move; */
+        /* cursor: crosshair; */
+        /* cursor: help; */
+        /* cursor: wait; */
+        /* cursor: text; */
+        /* cursor: url("../images/email.png"); */
+      }
+
+      legend {
+        border-radius: 10px;
+        border: 1px solid burlywood;
+        padding: 10px;
+        font-size: 24px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Student Form</legend>
+        <label for="">Name</label>
+        <input type="text" />
+        <label for="">Class</label>
+        <input type="number" />
+        <label for="">Courses</label>
+        <select name="" id="">
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JS</option>
+          <option value="4">React</option>
+          <option value="5">NextJs</option>
+          <option value="6">NodeJS</option>
+          <option value="7">Express</option>
+          <option value="8">Mongodb</option>
+        </select>
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
