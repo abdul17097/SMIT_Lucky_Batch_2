@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 1px solid;
+        height: 100vh;
+      }
+      .left {
+        width: 20%;
+        border-right: 1px solid;
+        height: 100%;
+        float: left;
+      }
+      .right {
+        width: 80%;
+        border: 1px solid;
+        float: right;
+        height: 100%;
+      }
+      nav {
+        border-bottom: 1px solid;
+        padding: 1%;
+        height: 5%;
+      }
+      main {
+        height: 95%;
+      }
+      .top {
+        /* border: 1px solid; */
+        padding: 5px;
+      }
+      .card {
+        width: 30%;
+        border: 1px solid;
+        display: inline-block;
+        padding: 10px;
+      }
+      .bottom {
+        border: 1px solid red;
+        height: 100%;
+        width: 100%;
+      }
+      .bottom_left {
+        border: 1px solid rgb(149, 29, 147);
+        height: 100%;
+        width: 60%;
+        float: left;
+      }
+      .bottom_right {
+        border: 1px solid rgb(17, 16, 16);
+        height: 100%;
+        width: 40%;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">Left Sidebar</div>
+      <div class="right">
+        <nav>Navbar</nav>
+        <main>
+          <div class="top">
+            <div class="card card1">Card 1</div>
+            <div class="card card2">Card 2</div>
+            <div class="card card3">Card 3</div>
+          </div>
+          <div class="bottom">
+            <div class="bottom_left">Bottom Left</div>
+            <div class="bottom_right">Bottom Right</div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
