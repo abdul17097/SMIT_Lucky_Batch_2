@@ -13,7 +13,7 @@ var name = "Zahid Khan";
 // alert(name);
 
 // var: keyword
-// redecleare
+// redcleartion
 // reassign
 
 var a = 10; // variable deleration & initilzation
